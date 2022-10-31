@@ -1,0 +1,14 @@
+# z2_plus-user 8.0.0 OPR1.170623.032 4.0.199_181018 release-keys
+- manufacturer: zuk
+- platform: msm8996
+- codename: z2_plus
+- flavor: z2_plus-user
+- release: 8.0.0
+- id: OPR1.170623.032
+- incremental: 4.0.199_181018
+- tags: release-keys
+- fingerprint: ZUK/z2_plus/z2_plus:8.0.0/OPR1.170623.032/4.0.199_181018:user/release-keys
+- is_ab: false
+- brand: ZUK
+- branch: z2_plus-user-8.0.0-OPR1.170623.032-4.0.199_181018-release-keys
+- repo: zuk_z2_plus_dump

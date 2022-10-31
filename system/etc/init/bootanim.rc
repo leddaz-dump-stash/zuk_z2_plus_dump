@@ -1,0 +1,21 @@
+service bootanim /system/bin/bootanimation
+## shenqi-framework, houlx1, Charging of power off, XUICR-66, begin
+    class main
+    user root
+    group graphics
+## shenqi-framework, houlx1, Charging of power off, XUICR-66, end
+    disabled
+    oneshot
+    writepid /dev/stune/top-app/tasks
+
+# BEGIN Motorola, houlx1, 1/1/2018, ZUIO-3359
+service shutdownanim /system/bin/bootanimation -shutdown
+    class core
+    user graphics
+    group graphics audio
+    disabled
+    oneshot
+# END ZUIO-3359
+
+on property:service.bootanim.exit=0 && property:init.svc.bootanim=stopped
+    start bootanim

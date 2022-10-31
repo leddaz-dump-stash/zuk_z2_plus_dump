@@ -1,0 +1,2 @@
+on property:sys.sysctl.debug_os_data=*
+    write sys/module/xt_qtaguid/parameters/debug_os_data ${sys.sysctl.debug_os_data}

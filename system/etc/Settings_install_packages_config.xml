@@ -1,0 +1,26 @@
+<!--
+    Copyright (C) 2017 Motorola Mobility Inc.
+    All Rights Reserved.
+    Motorola Mobility Confidential Restricted.
+
+    Define the packages which need be updated or reinstalled by Setting.
+    Ps: reinstall mean: uninstall, and then install.
+
+    condition:
+        a. update = 1, apk need upgrade;
+        b. reinstall = 1, apk need  uninstall, and then install.
+            This process can make app data lose.
+            May be for some apps uid changed or app Signature change.
+        c. If update and reinstall have the same value, it's a wrong config,
+            Settings shoule report error info.
+-->
+<!-- For Z2 Plus -->
+<resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
+    <package path="/system/preinstall/XuiCalendar/XuiCalendar.apk" name="com.zui.calendar" update="1" reinstall="0"/>
+    <package path="/system/preinstall/UserCenter/UserCenter.apk" name="com.zui.usercenter" update="1" reinstall="0"/>
+    <package path="/system/priv-app/XuiFeedBack/XuiFeedBack.apk" name="com.zui.feedback" update="1" reinstall="0"/>
+    <package path="/system/priv-app/LenovoStore/LenovoStore.apk" name="com.lenovo.leos.appstore" update="1" reinstall="0"/>
+    <package path="/system/preinstall/XuiNotes/XuiNotes.apk" name="com.zui.notes" update="1" reinstall="0"/>
+    <package path="/system/preinstall/XuiRecorder/XuiRecorder.apk" name="com.zui.recorder" update="1" reinstall="0"/>
+    <package path="/system/preinstall/XuiCompass/XuiCompass.apk" name="com.zui.compass" update="1" reinstall="0"/>
+</resources>
